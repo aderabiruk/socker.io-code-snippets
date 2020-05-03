@@ -1,0 +1,21 @@
+.messages-footer {
+    width: 100%;
+    padding: 15px 20px;
+    align-self: flex-end;
+    border-top: 1px solid #dee0e1;
+}
+
+.form-control {
+    flex-grow: 1;
+    overflow: hidden;
+    resize: none;
+    margin-right: 20px;
+}
+
+.messages-footer-control {
+    margin-top: 8px;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    float: right;
+}

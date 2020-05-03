@@ -1,0 +1,102 @@
+.message-item {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.message-item:last-child {
+    margin-bottom: 0;
+}
+
+.message-item > .message-item-avatar {
+    margin-bottom: 0;
+}
+
+.message-item > .message-item-body {
+    font-size: 12px;
+    flex-grow: 1;
+    padding: 12px 15px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.message-item > .message-item-body > .message-item-body-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.message-item > .message-item-body > .message-item-body-header > .message-item-body-name {
+    font-weight: 500;
+}
+
+.message-item > .message-item-body > .message-item-body-header > .message-item-body-datetime {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #858585;
+}
+
+.message-self > .message-item-avatar {
+    order: 1;
+}
+
+.message-self > .message-item-body {
+    order: 2;
+    border: solid 1px #dee0e1;
+    border-top-left-radius: 0;
+    margin-left: 14px;
+    margin-right: 50px;
+}
+
+.message-self > .message-item-body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #dee0e1;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.message-self > .message-item-body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-right: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 10px solid transparent;
+}
+   
+.message-from > .message-item-avatar {
+    order: 2;
+}
+
+.message-from > .message-item-body {
+    order: 1;
+    background-color: #eff1f7;
+    border-top-right-radius: 0;
+    margin-right: 14px;
+    margin-left: 50px;
+}
+
+.message-from > .message-item-body::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #eff1f7;
+}

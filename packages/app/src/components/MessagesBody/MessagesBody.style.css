@@ -1,0 +1,17 @@
+.messages-body {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.message-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+}
+
+.messages-empty-error {
+    text-align: center;
+    align-content: center;
+}

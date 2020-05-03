@@ -1,0 +1,28 @@
+.user-info-body {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.user-info-body > .user-info-body-item {
+    margin-top: 10px;
+}
+
+.user-info-body > .user-info-body-item-user {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.user-info-body > .user-info-body-item-user > .user-info-body-item-avatar {
+    margin-right: 12px;
+}
+
+.user-info-body > .user-info-body-item-user > .user-info-body-item-name {
+    line-height: 31px;
+    color: #333;
+}
+
+
+.user-info-body > .user-info-body-item > .user-info-body-item-name {
+    color: #858585;
+    margin-bottom: 3px;
+}
